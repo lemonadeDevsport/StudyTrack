@@ -1,6 +1,8 @@
+/* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 
+/* Global Styling */
 * {
     margin: 0;
     padding: 0;
@@ -11,59 +13,52 @@
 
 html,
 body {
-    overflow-x: hidden;
-    /* To prevent Horizontal scroll */
+    overflow-x: hidden; /* Prevent Horizontal Scroll */
 }
 
 html {
-    scroll-behavior: smooth;
-    /* To scrolling animation */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
+/* Header Styling */
 #header {
     position: absolute;
-    /* To Overlap with background */
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5em 5em;
     display: flex;
-    /* To get elements in row */
     justify-content: space-between;
     align-items: center;
-    z-index: 99999;
-    /* Header shld be above everything */
+    z-index: 99999; /* Header above other elements */
 }
 
 #header .logo {
     color: #002431;
     font-weight: 800;
     font-size: 2.5em;
-    text-decoration: none;
-    /* To prevent Underline */
+    text-decoration: none; /* Remove underline */
 }
+
 #header img {
-    max-width: 5rem; /* Scale down the logo */
+    max-width: 5rem;
     height: auto;
     position: absolute;
 }
 
 #header ul {
     display: flex;
-    /* To get elements in row */
     justify-content: space-around;
     align-items: center;
 }
 
 #header ul li {
     list-style: none;
-    /* To Remove dot */
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 #header ul li a {
     text-decoration: none;
-    /* To prevent Underline */
     padding: 6px 15px;
     color: #003549;
     border-radius: 20px;
@@ -75,7 +70,7 @@ html {
     color: white;
 }
 
-/* The Section Body... Set it to max size of screen */
+/* Section Styling */
 section {
     position: relative;
     width: 100%;
@@ -85,7 +80,7 @@ section {
     align-items: center;
 }
 
-/* To blend section color with water color */
+/* Background Overlay */
 section::before {
     content: "";
     position: absolute;
@@ -97,7 +92,7 @@ section::before {
     z-index: 10;
 }
 
-/* Make all images absolute and cover whole screen */
+/* Section Image Styling */
 section img {
     position: absolute;
     top: 0;
@@ -108,30 +103,32 @@ section img {
     pointer-events: none;
 }
 
-/* Properites for th text on top section  */
-section #text span {
+/* Text Overlay in Section */
+section #embrace span {
     font-size: 0.2em;
     letter-spacing: 2px;
     font-weight: 400;
     color: white;
 }
 
-section #text {
+section #success {
     position: absolute;
     color: #004660;
     font-size: 10vw;
     text-align: center;
     line-height: 0.55em;
-    font-family: "Rancho", cursive;
+    font-family: 'Rancho', cursive;
     transform: translateY(-50%);
-    top: 40%;
+    top: 50%;
 }
 
+
+/* Explore Button */
 #explore {
-    position: fixed; /* Keeps it in the same spot when scrolling */
-    bottom: 50px; /* Adjust distance from the bottom */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Perfectly center it */
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     text-decoration: none;
     padding: 10px 30px;
     background: white;
@@ -140,16 +137,15 @@ section #text {
     font-weight: bold;
     letter-spacing: 2px;
     border-radius: 40px;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
 }
-
 
 #explore:hover {
     background: #003549;
     color: white;
 }
 
-/* Propeties of Top button */
+/* Scroll to Top Button */
 #top {
     position: fixed;
     width: 50px;
@@ -169,11 +165,7 @@ section #text {
 
 /* Glass Effect */
 .glass {
-    background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
@@ -183,7 +175,7 @@ section #text {
     margin-bottom: 2%;
 }
 
-/* Properties for middle section (below water) */
+/* Middle Section Styling */
 .sec {
     position: relative;
     padding: 10%;
@@ -193,7 +185,6 @@ section #text {
     overflow: hidden;
 }
 
-/* Properties for text content */
 .sec h2 {
     font-size: 3.5em;
 }
@@ -229,28 +220,16 @@ section #text {
     margin: 2%;
 }
 
-/* Make all fishes image as absolute.. To overlap with background */
+/* Fish and Sea Bed Styling */
 .fishes {
     position: absolute;
     opacity: 0.8;
 }
 
-/* Properties for each fish and sea bed*/
-#fish1 {
-    top: 0%;
-}
-
-#fish2 {
-    top: 32%;
-}
-
-#fish3 {
-    top: 60%;
-}
-
-#fish4 {
-    top: 87%;
-}
+#fish1 { top: 0%; }
+#fish2 { top: 32%; }
+#fish3 { top: 60%; }
+#fish4 { top: 87%; }
 
 #seabed {
     width: 100%;
@@ -264,56 +243,16 @@ section #text {
     opacity: 1;
 }
 
-#sea1 {
-    top: 10%;
-    left: 1%;
-    width: 20%;
-}
+#sea1 { top: 10%; left: 1%; width: 20%; }
+#sea2 { top: 16%; right: 1%; width: 10%; }
+#sea3 { top: 40%; left: 0; width: 12%; }
+#sea4 { top: 50%; right: 0; width: 12%; }
+#sea5 { top: 70%; left: 1%; width: 10%; }
+#sea6 { top: 75%; right: 2%; width: 6%; }
+#sea7 { top: 90%; right: 70%; width: 10%; }
+#sea8 { bottom: 0; left: 55%; width: 10%; z-index: 100; }
 
-#sea2 {
-    top: 16%;
-    right: 1%;
-    width: 10%;
-}
-
-#sea3 {
-    top: 40%;
-    left: 0;
-    width: 12%;
-}
-
-#sea4 {
-    top: 50%;
-    right: 0;
-    width: 12%;
-}
-
-#sea5 {
-    top: 70%;
-    left: 1%;
-    width: 10%;
-}
-
-#sea6 {
-    top: 75%;
-    right: 2%;
-    width: 6%;
-}
-
-#sea7 {
-    top: 90%;
-    right: 70%;
-    width: 10%;
-}
-
-#sea8 {
-    bottom: 0;
-    left: 55%;
-    width: 10%;
-    z-index: 100;
-}
-
-/* Properties for mobile */
+/* Mobile Styling */
 @media screen and (max-width: 650px) {
     #header {
         padding: 1em 2em;
@@ -328,46 +267,16 @@ section #text {
 
     section #text {
         font-size: 20vw;
-        /* Adjust text size acc to screen size */
     }
 
-    /* Using contian to make img fit mobile screen size */
-    /* height and width chnages size and position */
-    section img#cloud {
+    section img#cloud, section img#bird1, section img#bird2 {
         object-fit: contain;
-        height: 600px;
-        width: 600px;
     }
 
-    section img#bird1 {
-        object-fit: contain;
-        height: 600px;
-        width: 400px;
-    }
-
-    section img#bird2 {
-        object-fit: contain;
-        height: 750px;
-        width: 500px;
-    }
-
-    /* Adjust text content acc to screen size */
-    .sec ul li {
-        margin: 20px;
-    }
-
-    .sec ul {
-        margin: 0px 0px;
-    }
-
-    .sec h3 {
-        font-size: 1.5em;
-        margin: 20px 0px;
-    }
-
-    .sec p {
-        margin: 1% 4%;
-    }
+    .sec ul li { margin: 20px; }
+    .sec ul { margin: 0px 0px; }
+    .sec h3 { font-size: 1.5em; margin: 20px 0px; }
+    .sec p { margin: 1% 4%; }
 
     #seabed {
         object-fit: contain;
@@ -379,61 +288,27 @@ section #text {
         backdrop-filter: blur(1px);
     }
 
-    #sea1 {
-        top: 7%;
-        width: 40%;
-    }
-
-    #sea2 {
-        top: 25%;
-        width: 20%;
-    }
-
-    #sea3 {
-        top: 42%;
-        width: 25%;
-    }
-
-    #sea4 {
-        top: 52%;
-        width: 25%;
-    }
-
-    #sea5 {
-        top: 72%;
-        left: 1%;
-        width: 20%;
-    }
-
-    #sea6 {
-        top: 80%;
-        right: 2%;
-        width: 15%;
-    }
-
-    #sea7 {
-        top: 96%;
-        left: 1%;
-        width: 20%;
-    }
-
-    #sea8 {
-        left: 50%;
-        width: 15%;
-    }
+    #sea1 { top: 7%; width: 40%; }
+    #sea2 { top: 25%; width: 20%; }
+    #sea3 { top: 42%; width: 25%; }
+    #sea4 { top: 52%; width: 25%; }
+    #sea5 { top: 72%; left: 1%; width: 20%; }
+    #sea6 { top: 80%; right: 2%; width: 15%; }
+    #sea7 { top: 96%; left: 1%; width: 20%; }
+    #sea8 { left: 50%; width: 15%; }
 }
 
-/* Search Bar - Positioned Below "Explore" Button */
+/* Search Bar */
 #search-container {
     position: absolute;
-    top: calc(60% + 80px); /* Adjust based on "Go Forth!" button height */
+    top: calc(60% + 80px);
     left: 50%;
     transform: translateX(-50%);
-    width: 900px; /* Increased width */
+    width: 900px;
     background: rgba(173, 216, 230, 0.15);
     backdrop-filter: blur(12px);
     border: 2px solid rgba(173, 216, 230, 0.6);
-    padding: 20px; /* Increased padding */
+    padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
@@ -441,75 +316,63 @@ section #text {
 
 /* Input Field */
 #search-input {
-    width: 85%; /* Takes more space inside the container */
+    width: 85%;
     padding: 12px;
     font-size: 16px;
     border: 2px solid rgba(173, 216, 230, 0.6);
     border-radius: 5px;
-    background: white; /* Ensure the background is white */
-    color: black !important; /* Make text black */
+    background: white;
+    color: black !important;
 }
 
-/* Search & Clear Button Styling */
+/* Button Styling */
 button {
-    padding: 9px 22px; /* Spacious feel */
-    font-size: 16px; /* Readable text */
+    padding: 9px 22px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    background: rgba(173, 216, 230, 0.5); /* Soft baby blue, semi-transparent */
+    background: rgba(173, 216, 230, 0.5);
     color: white;
-    border: 2px solid rgba(173, 216, 230, 0.7); /* Light blue border */
-    border-radius: 12px; /* Rounded corners for a soft look */
-    backdrop-filter: blur(6px); /* Glass-like effect */
-    box-shadow: 0px 4px 12px rgba(173, 216, 230, 0.3); /* Gentle glow */
+    border: 2px solid rgba(173, 216, 230, 0.7);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 12px rgba(173, 216, 230, 0.3);
     transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 button:hover {
-    background: rgba(173, 216, 230, 0.8); /* More opaque on hover */
-    border: 2px solid rgba(173, 216, 230, 1); /* Stronger blue border */
-    box-shadow: 0px 6px 16px rgba(173, 216, 230, 0.5); /* Soft blue glow */
-    transform: translateY(-2px); /* Subtle lift effect */
+    background: rgba(173, 216, 230, 0.8);
+    border: 2px solid rgba(173, 216, 230, 1);
+    box-shadow: 0px 6px 16px rgba(173, 216, 230, 0.5);
+    transform: translateY(-2px);
 }
 
-/* Active (Click) Effect */
 button:active {
-    background: rgba(173, 216, 230, 0.9); /* Almost solid when clicked */
-    transform: scale(0.98); /* Slight shrink on press */
+    background: rgba(173, 216, 230, 0.9);
+    transform: scale(0.98);
 }
 
 /* Fixed-Size Answer Box with Scrollable Content */
 #search-results {
-    position: fixed; /* Keeps it floating above everything */
-    top: 110%; /* Adjusts position */
+    position: fixed;
+    top: 110%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 200px; /* Fixed height */
-    z-index: 9999; /* Ensures it's on top of everything */
-    background: rgba(173, 216, 230, 0.95); /* Keeps the sheer baby blue effect */
+    height: 200px;
+    z-index: 9999;
+    background: rgba(173, 216, 230, 0.95);
     padding: 18px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Prevents overflow issues */
-    display: none; /* Hides the box until triggered */
+    overflow: hidden;
+    display: none;
 }
 
-/* Scrollable Content Inside the Output Box */
-#search-results p {
-    max-height: 220px; /* Ensures the text stays within the box */
-    overflow-y: auto; /* Enables vertical scrolling */
-    padding-right: 10px; /* Adds space for scrollbar */
-    line-height: 1.6;
-    word-wrap: break-word; /* Ensures long words wrap properly */
-}
-
-/* Contact Form */
 /* Contact Form */
 form {
     min-width: 25rem;
-    margin: 0 auto; /* Center the form */
+    margin: 0 auto;
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -527,33 +390,17 @@ form {
 }
 
 .form-control {
-    background-color: rgba(
-            242,
-            246,
-            248,
-            0.5
-    ); /* Low-opacity transparent background */
+    background-color: rgba(242, 246, 248, 0.5);
     border-radius: 2rem;
     border: none;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
     transition: all 0.2s ease-in-out;
 }
 
-.form-control.thick {
-    height: 3.3rem;
-    padding: 0.5rem 3.5rem;
-}
-
 .form-control:focus {
     background-color: rgba(242, 246, 248, 0.5);
     border: none;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.2);
-}
-
-.message .form-control {
-    padding: 0.5rem 1.8rem;
-    height: 20rem; /* Make the message text box longer */
-    width: 5rem;
 }
 
 ::placeholder {
@@ -569,48 +416,3 @@ textarea {
     font-size: 1.1rem;
     padding: 25px;
 }
-
-.icon {
-    color: #57565c;
-    height: 1.3rem;
-    position: absolute;
-    left: 1.5rem;
-    top: 1.1rem;
-}
-
-.btn.btn-primary {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 3rem;
-    border: 0;
-    border-radius: 3rem;
-    background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
-    background-size: 300% 100%;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn.btn-primary:hover:enabled {
-    box-shadow: 0 0.5em 0.5em -0.4;
-}
-
-#formName {
-    margin-top: 2rem;
-    margin-left: 25rem;
-}
-#formEmail {
-    margin-left: 25rem;
-}
-#formPhone {
-    margin-left: 25rem;
-}
-#formMessage {
-    margin-left: 25rem;
-    padding-right: 10rem;
-}
-.btn {
-    margin-left: 25rem;
-}
-
-/* End Contact Form */

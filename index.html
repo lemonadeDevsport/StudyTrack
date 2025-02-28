@@ -3,45 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-            name="description"
-            content="Explore the interactive Halloween Party project, showcasing responsive design, animations, and web development techniques. Immerse yourself in the spooky ambiance of Halloween."
-    />
-
-    <!-- Favicon -->
-
-
-    <!-- Page Title -->
-    <title>Parallax Scrolling Website</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <title>StudyTrack Homework Helper</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animation.css" />
-
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <!-- Open Graph meta tags for image sharing -->
     <meta property="og:title" content="Parallax Scroll Site" />
-    <meta
-            property="og:description"
-            content="Explore the interactive Halloween Party project and Immerse yourself in the spooky ambiance of Halloween."
-    />
-    <meta
-            property="og:image"
-            content="https://drive.google.com/uc?id=1GFbBHTi7w8weRVqLJ7bkofezEEGg4U30"
-    />
-    <meta property="og:type" content="”website”" />
-    <!-- <meta property="og:url" content="https://parallax-website-by-vineet.netlify.app/"> -->
+    <meta property="og:description" content="Explore the interactive Halloween Party project and Immerse yourself in the spooky ambiance of Halloween." />
+    <meta property="og:image" content="https://drive.google.com/uc?id=1GFbBHTi7w8weRVqLJ7bkofezEEGg4U30" />
+    <meta property="og:type" content="website" />
 </head>
 
 <body>
-<!-- This is the header/ Nav Bar -->
+<!-- Header/Nav Bar -->
 <header id="header">
     <a href="#" class="logo">StudyTrack</a>
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Untitled_design-removebg-preview.png?v=1738642598589"/>
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Untitled_design-removebg-preview.png?v=1738642598589" />
     <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#sec">The Mission</a></li>
@@ -49,343 +30,111 @@
     </ul>
 </header>
 
-<!-- This is the Top Section (Above Water) -->
+<!-- Top Section (Above Water) -->
 <section>
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Screenshot%202025-02-04%20at%202.06.37%E2%80%AFAM.png?v=1738652803632"
-            id="sky"
-            class="wallpaper"
-    />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Screenshot%202025-02-04%20at%202.06.37%E2%80%AFAM.png?v=1738652803632" id="sky" class="wallpaper" />
 
-    <h2 id="text"><span>"Embrace the drive of"</span><br />Success</h2>
+
+    <h2 id="embrace"><span>"Embrace the Thrill of"</span><br>Success</h2>
 
     <a href="#sec" id="explore">Go Forth!</a>
 </section>
 
-
-
-<!-- AI Search Bar (Under "Go Forth!") -->
+<!-- AI Search Bar -->
 <div id="search-container">
-    <input type="text" id="search-input" placeholder="Ask a question...">
+    <input type="text" id="search-input" placeholder="Ask a question..." />
     <button onclick="searchAI()">Search</button>
     <div id="search-results"></div>
 </div>
 
-
-
-
-
-
-<!-- This is the Middle Section (Below Water) which has content -->
+<!-- Middle Section (Below Water) -->
 <div class="sec" id="sec">
-    <!-- Importing sea background images (on top.. so that it hides behind glass content) -->
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss4.png?v=1738629387386"
-            id="sea1"
-            class="undersea"
-            style="width: 220px; height: auto"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630353503"
-            id="sea2"
-            class="undersea"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss2.png?v=1738629375770"
-            id="sea3"
-            class="undersea"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss6.png?v=1738629636824"
-            id="sea4"
-            class="undersea"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630020720"
-            id="sea5"
-            class="undersea"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss5.png?v=1738629381816"
-            id="sea6"
-            class="undersea"
-            style="transform: scale(1.7)"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss11.png?v=1738630442844"
-            id="sea7"
-            class="undersea"
-    />
+    <!-- Sea Backgrounds -->
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss4.png?v=1738629387386" id="sea1" class="undersea" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630353503" id="sea2" class="undersea" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss2.png?v=1738629375770" id="sea3" class="undersea" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss6.png?v=1738629636824" id="sea4" class="undersea" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630020720" id="sea5" class="undersea" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss5.png?v=1738629381816" id="sea6" class="undersea" style="transform: scale(1.7)" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss11.png?v=1738630442844" id="sea7" class="undersea" />
 
-    <!-- Text Content here -->
-
+    <!-- Text Content -->
     <h2>Next Gen AI Study Tool</h2>
-    <div id="name">By StudyTrack</div>
-
-    <br />
+    <div class="name">By StudyTrack</div>
 
     <div class="glass">
         <h3>What is Artificial Intelligence?</h3>
         <ul>
-            <p>
-                Artificial Intelligence (AI) refers to the simulation of human
-                intelligence in machines that are programmed to think, learn, and
-                make decisions. In other words, AI allows computers and software to
-                perform tasks that typically require human intelligence, such as
-                understanding language, recognizing patterns, solving problems, and
-                even making decisions based on data. AI can be broken down into two
-                main types:
-            </p>
-            <li>
-                <h4>Narrow AI:</h4>
-                <p>
-                    This is AI that is designed to perform a specific task, like
-                    facial recognition, language translation, or playing chess. Most
-                    AI systems today are narrow AI.
-                </p>
-            </li>
-            <li>
-                <h4>General AI</h4>
-                <p>
-                    This is the more advanced form of AI that can perform any
-                    intellectual task that a human can do. It is still a concept and
-                    not yet a reality.
-                </p>
-            </li>
-            <p>
-                AI works through algorithms and machine learning, where the system
-                is trained on data to recognize patterns and improve over time
-                without being explicitly programmed for every task.
-            </p>
+            <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines. AI allows computers and software to perform tasks that typically require human intelligence.</p>
+            <li><h4>Narrow AI:</h4><p>This is AI designed to perform a specific task like facial recognition or playing chess.</p></li>
+            <li><h4>General AI:</h4><p>This is an advanced AI that can perform any intellectual task that a human can do.</p></li>
         </ul>
     </div>
-    <br />
+
     <div class="glass">
         <h3>AI + Academic Success</h3>
         <ul>
-            <li aria-level="1">
-                <h4>Personalized Learning</h4>
-                <p>
-                    AI can adapt to a student’s learning style and pace, providing
-                    personalized resources and feedback. StudyTrack's platform uses AI
-                    to customize lessons based on a student’s strengths and
-                    weaknesses. By analyzing performance data, AI can recommend topics
-                    to focus on or even adjust difficulty levels for a better learning
-                    experience.
-                </p>
-            </li>
-            <li aria-level="1">
-                <h4>Smart Tutoring</h4>
-                <p>
-                    Our state-of-the-art AI-powered tutoring system offers instant
-                    help on questions or problems. This tool can guide students
-                    step-by-step, explain complex concepts, and provide hints or
-                    examples without waiting for a human tutor. They’re available
-                    24/7, making them perfect for late-night study sessions.
-                </p>
-            </li>
-            <li aria-level="1">
-                <h4>Exam Preparation</h4>
-                <p>
-                    StudyTrack's Next Gen AI-powered tool can generate customized
-                    practice exams based on the syllabus, which is a great way for
-                    students to simulate test conditions. The model is trained to
-                    generate questions or problems based on previous content,
-                    providing instant feedback to enhance preparation.
-                </p>
-            </li>
+            <li><h4>Personalized Learning</h4><p>AI can adapt to a student’s learning style and provide personalized resources and feedback.</p></li>
+            <li><h4>Smart Tutoring</h4><p>Our AI-powered tutoring system offers instant help with questions or problems, available 24/7.</p></li>
+            <li><h4>Exam Preparation</h4><p>Generate customized practice exams based on the syllabus for better preparation.</p></li>
         </ul>
     </div>
 
     <div class="glass">
         <h3>Ethical AI Use</h3>
         <ul>
-            <p>
-                StudyTrack's Next Gen AI Model plays a big role in improving the
-                study experience for students. However, it’s essential to ensure
-                that the AI is used ethically to create a fair, secure, and
-                responsible environment. Here are our key principles that we are
-                contracted to follow to ensure ethical AI use:
-            </p>
-            <li aria-level="1">
-                <h4>Advance, Not Replace</h4>
-                <p>
-                    The model enhances a student's learning experience, not do the
-                    work for them. The goal is to help students learn and grow, not
-                    simply provide answers.
-                    <br />
-                    <strong>How it applies:</strong> <br />Assist with practice
-                    problems, offer hints, or explain concepts, but it should not
-                    provide answers outright without encouraging students to think
-                    critically. For example, if a student asks for help with an essay,
-                    the AI might suggest areas for improvement or offer resources, but
-                    it should not write the essay for them. The focus should always be
-                    on supporting independent learning and improving skills.
-                </p>
-            </li>
-            <li aria-level="1">
-                <h4>Secured Data</h4>
-                <p>
-                    The personal data of students is to always be protected and used
-                    responsibly. This AI system should not misuse or improperly share
-                    sensitive information.
-                    <br />
-                    <strong>How it applies:</strong> <br />
-                    When students interact with StudyTrack, their data—such as their
-                    name, assignments, and performance—are kept private and secure.
-                    StudyTrack operates under strict data privacy standards, including
-                    GDPR (General Data Protection Regulation), ensuring that any data
-                    used for personalization or feedback is anonymized or encrypted to
-                    prevent unauthorized access.
-                </p>
-            </li>
-            <li aria-level="1">
-                <h4>Transparency</h4>
-                <p>
-                    Students have access to the certain background schematics in order
-                    to understand how the AI works and how it makes decisions,
-                    especially when providing feedback or answers.
-                    <br />
-                    <strong>How it applies:</strong> <br />
-                    If a student asks for help on a math problem or receives a
-                    recommendation on how to improve their writing, the AI is trained
-                    to clearly explain why it gave that answer or suggestion. This
-                    transparency helps build trust and ensures students understand the
-                    reasoning behind the AI-assisted decisions.
-                </p>
-            </li>
+            <p>We ensure that AI is used ethically to create a fair, secure, and responsible environment.</p>
+            <li><h4>Advance, Not Replace</h4><p>The AI should help students learn, not do the work for them.</p></li>
+            <li><h4>Secured Data</h4><p>Personal data is kept secure and used responsibly, following GDPR standards.</p></li>
+            <li><h4>Transparency</h4><p>Students can understand how the AI works and how it makes decisions.</p></li>
         </ul>
     </div>
 
-    <!-- Importing fish and seabed images -->
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss12.png?v=1738631864552"
-            id="fish1"
-            class="fishes"
-            style="width: 90px; height: auto"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss13.png?v=1738632020949"
-            id="fish2"
-            class="fishes"
-            style="width: 85px; height: auto"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632037354"
-            id="fish3"
-            class="fishes"
-            style="width: 85px; height: auto"
-    />
-    <img
-            src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632155786"
-            id="fish4"
-            class="fishes"
-            style="width: 100px; height: auto"
-    />
+    <!-- Fish and Seabed Images -->
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss12.png?v=1738631864552" id="fish1" class="fishes" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss13.png?v=1738632020949" id="fish2" class="fishes" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632037354" id="fish3" class="fishes" />
+    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632155786" id="fish4" class="fishes" />
 
-    <!-- Container for the bubble animation -->
+    <!-- Bubble Animation -->
     <div class="bubbles">
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble2.png?v=1738630842217"
-                alt=""
-                width="30"
-                height="30"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble3.png?v=1738630866087"
-                alt=""
-                width="50"
-                height="50"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble4.png?v=1738631261894"
-                alt=""
-                width="30"
-                height="30"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble1.png?v=1738631167704"
-                alt=""
-                width="40"
-                height="40"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble2.png?v=1738630842217"
-                alt=""
-                width="55"
-                height="55"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble3.png?v=1738630866087"
-                alt=""
-                width="45"
-                height="45"
-        />
-        <img
-                src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble1.png?v=1738631167704"
-                alt=""
-                width="30"
-                height="30"
-        />
+        <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble2.png?v=1738630842217" width="30" height="30" />
+        <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble3.png?v=1738630866087" width="50" height="50" />
+        <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble4.png?v=1738631261894" width="30" height="30" />
+        <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble1.png?v=1738631167704" width="40" height="40" />
     </div>
-
-    <!-- Code for the footer -->
-    <div class="contactForm">
-        <form>
-            <h1 class="title text-center mb-4">Contact Us</h1>
-
-            <!-- Name -->
-            <div class="form-group position-relative">
-                <label for="formName" class="d-block">
-                    <i class="icon" data-feather="user"></i>
-                </label>
-                <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name" required>
-            </div>
-
-            <!-- E-mail -->
-            <div class="form-group position-relative">
-                <label for="formEmail" class="d-block">
-                    <i class="icon" data-feather="mail"></i>
-                </label>
-                <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail" required>
-            </div>
-
-            <!-- Phone Number -->
-            <div class="form-group position-relative">
-                <label for="formPhone" class="d-block">
-                    <i class="icon" data-feather="phone"></i>
-                </label>
-                <input type="tel" id="formPhone" class="form-control form-control-lg thick" placeholder="Phone Number">
-            </div>
-
-            <!-- Message -->
-            <div class="form-group position-relative">
-                <label for="formMessage" class="d-block">
-                    <i class="icon" data-feather="message-square"></i>
-                </label>
-                <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Message" required></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-            </div>
-        </form>
-    </div>
-
 </div>
 
+<!-- Contact Form -->
+<div class="contactForm">
+    <form>
+        <h1 class="title text-center mb-4">Contact Us</h1>
+        <div class="form-group position-relative">
+            <label for="formName">Name</label>
+            <input type="text" id="formName" class="form-control" placeholder="Name" required />
+        </div>
+        <div class="form-group position-relative">
+            <label for="formEmail">E-mail</label>
+            <input type="email" id="formEmail" class="form-control" placeholder="E-mail" required />
+        </div>
+        <div class="form-group position-relative">
+            <label for="formPhone">Phone Number</label>
+            <input type="tel" id="formPhone" class="form-control" placeholder="Phone Number" />
+        </div>
+        <div class="form-group position-relative">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" class="form-control" rows="7" placeholder="Message" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </div>
+    </form>
+</div>
 
-
-
-
-
-
-<!-- The button to scroll back to top -->
+<!-- Scroll to Top Button -->
 <a id="top" href="#"> <i class="fas fa-arrow-up"></i> </a>
-</div>
-</body>
 
-<!-- Always include javascript at end of file...just above html tag -->
+<!-- JavaScript -->
 <script src="action.js"></script>
+</body>
 </html>
