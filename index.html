@@ -13,7 +13,7 @@
 
     <!-- Open Graph meta tags for image sharing -->
     <meta property="og:title" content="Parallax Scroll Site" />
-    <meta property="og:description" content="Explore the interactive Halloween Party project and Immerse yourself in the spooky ambiance of Halloween." />
+    <meta property="og:description" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://drive.google.com/uc?id=1GFbBHTi7w8weRVqLJ7bkofezEEGg4U30" />
     <meta property="og:type" content="website" />
 </head>
@@ -31,14 +31,20 @@
 </header>
 
 <!-- Top Section (Above Water) -->
+
 <section>
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Screenshot%202025-02-04%20at%202.06.37%E2%80%AFAM.png?v=1738652803632" id="sky" class="wallpaper" />
+    <div>
+        <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Screenshot%202025-02-04%20at%202.06.37%E2%80%AFAM.png?v=1738652803632" id="sky" class="wallpaper" />
 
-
-    <h2 id="embrace"><span>"Embrace the Thrill of"</span><br>Success</h2>
-
-    <a href="#sec" id="explore">Go Forth!</a>
+    </div>
+    <div id="embrace">
+        <span><strong>"Embrace the Thrill of"</strong></span>
+    </div>
+    <div id="success">
+        <h2>Success</h2>
+    </div>
 </section>
+
 
 <!-- AI Search Bar -->
 <div id="search-container">
@@ -59,8 +65,8 @@
     <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss11.png?v=1738630442844" id="sea7" class="undersea" />
 
     <!-- Text Content -->
-    <h2>Next Gen AI Study Tool</h2>
-    <div class="name">By StudyTrack</div>
+    <h2 class="webTitle">Next Gen AI Study Tool</h2>
+    <div class="webTitle">By StudyTrack</div>
 
     <div class="glass">
         <h3>What is Artificial Intelligence?</h3>
@@ -106,29 +112,27 @@
 </div>
 
 <!-- Contact Form -->
+<div class="sec" id="secc">
 <div class="contactForm">
     <form>
         <h1 class="title text-center mb-4">Contact Us</h1>
         <div class="form-group position-relative">
-            <label for="formName">Name</label>
             <input type="text" id="formName" class="form-control" placeholder="Name" required />
         </div>
         <div class="form-group position-relative">
-            <label for="formEmail">E-mail</label>
             <input type="email" id="formEmail" class="form-control" placeholder="E-mail" required />
         </div>
         <div class="form-group position-relative">
-            <label for="formPhone">Phone Number</label>
             <input type="tel" id="formPhone" class="form-control" placeholder="Phone Number" />
         </div>
         <div class="form-group position-relative">
-            <label for="formMessage">Message</label>
             <textarea id="formMessage" class="form-control" rows="7" placeholder="Message" required></textarea>
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
         </div>
     </form>
+</div>
 </div>
 
 <!-- Scroll to Top Button -->
