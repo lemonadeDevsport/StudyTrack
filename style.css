@@ -81,12 +81,6 @@ section {
     align-items: center;
 }
 
-/* WebTitle */
-.webTitle
-{
-    padding-top:0;
-
-}
 
 
 /* Section Image Styling */
@@ -122,6 +116,8 @@ section img {
     top: 50%;
     z-index: 20; /* Ensure it's above other elements */
 }
+
+
 /*END*/
 
 
@@ -146,6 +142,83 @@ section img {
     background: #003549;
     color: white;
 }
+
+/*Dropdown menu*/
+/* Dropdown Button */
+.dropbtn,.dropdown-content{
+    padding: 9px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(173, 216, 230, 0.5);
+    color: white;
+    border: 2px solid rgba(173, 216, 230, 0.7);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 12px rgba(173, 216, 230, 0.3);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropbtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+    margin-top:20vh;
+    margin-right:40vh;
+
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(173, 216, 230, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+    align-items: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(173, 216, 230, 0.5);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn { align-items: center; background-color: rgba(173, 216, 230, 0.5);}
+/*END Dropdown menu*/
+
+
+
+
+
+
+
+
+
+
+
 
 /* Scroll to Top Button */
 #top {
@@ -180,7 +253,7 @@ section img {
 /* Middle Section Styling */
 .sec {
     position: relative;
-    padding: 10%;
+    padding: 5%;
     background-image: linear-gradient(to right top, #579f8c, #38a8b0, #37add4, #6dacee, #b0a6f4);
     padding-bottom: 15%;
     z-index: 50;
@@ -226,6 +299,9 @@ section img {
 .fishes {
     position: absolute;
     opacity: 0.8;
+    width: 25vh; /* Adjust the width */
+    height: auto;
+
 }
 
 #fish1 { top: 0%; }
@@ -314,6 +390,7 @@ section img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
+    margin-top:50px;
 }
 
 /* Input Field */

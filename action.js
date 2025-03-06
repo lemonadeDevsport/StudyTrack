@@ -72,10 +72,66 @@ window.addEventListener('scroll', function () {
     if (fish4) fish4.style.right = (value - 100) + 'px';
 });
 
+/*changeAI*/
+function changeAI() {
+    const dropdown = document.getElementById("dropdown");
+    const text = document.getElementById("sTitle");
+    text.innerText = dropdown.value;
+}
+/*END changeAI*/
 
 
 
 
+
+
+/*Deepseek AI*/
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+    baseURL: 'https://api.deepseek.com',
+    apiKey: '<DeepSeek API Key>'
+});
+
+async function main() {
+    const completion = await openai.chat.completions.create({
+        messages: [{ role: "system", content: "You are a helpful assistant." }],
+        model: "deepseek-chat",
+    });
+
+    console.log(completion.choices[0].message.content);
+}
+
+main();
+
+
+
+/*Groq AI */
+import Groq from "groq-sdk";
+
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+
+export async function main() {
+    const chatCompletion = await getGroqChatCompletion();
+    // Print the completion returned by the LLM.
+    console.log(chatCompletion.choices[0]?.message?.content || "");
+}
+
+export async function getGroqChatCompletion() {
+    return groq.chat.completions.create({
+        messages: [
+            {
+                role: "user",
+                content: "Explain the importance of fast language models",
+            },
+        ],
+        model: "llama-3.3-70b-versatile",
+    });
+}
+
+
+
+/*Google Gemini*/
 async function searchAI() {
     let userInput = document.getElementById("search-input").value.trim();
     let searchResults = document.getElementById("search-results");
