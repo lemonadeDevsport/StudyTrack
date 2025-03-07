@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StudyTrack Homework Helper - Your AI-powered academic assistant for smarter studying." />
+  <script src="action.js"></script>
   <title>StudyTrack Homework Helper</title>
 
   <!-- CSS Files -->
@@ -13,121 +14,48 @@
 
   <!-- Open Graph meta tags for image sharing -->
   <meta property="og:title" content="Parallax Scroll Site" />
-  <meta property="og:description" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:description" content="Enhance your learning experience with StudyTrack's AI-powered study assistant." />
   <meta property="og:image" content="https://drive.google.com/uc?id=1GFbBHTi7w8weRVqLJ7bkofezEEGg4U30" />
   <meta property="og:type" content="website" />
 </head>
 
 <body>
-<!-- Header/Nav Bar -->
 <header id="header">
   <a href="#" class="logo">StudyTrack</a>
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Untitled_design-removebg-preview.png?v=1738642598589" />
+  <img src="https://cdn.glitch.global/.../Untitled_design-removebg-preview.png?v=1738642598589" alt="StudyTrack Logo" />
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#sec">The Mission</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">The Mission</a></li>
     <li><a href="#">Choose Your AI</a></li>
-    <li><a href="#secc">Contact Us</a></li>
+    <li><a href="index.html">Contact Us</a></li>
   </ul>
 </header>
 
-<!-- Top Section (Above Water) -->
-
 <section>
   <div>
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/Screenshot%202025-02-04%20at%202.06.37%E2%80%AFAM.png?v=1738652803632" id="sky" class="wallpaper" />
-
+    <img src="https://cdn.glitch.global/.../Screenshot.png?v=1738652803632" id="sky" class="wallpaper" alt="Sky Background" />
   </div>
   <div id="embrace">
     <span><strong>Choose Your AI</strong></span>
   </div>
   <div id="success">
-    <h2 id="sTitle">Google Gemini</h2>
+    <h2 id="sTitle">Select an AI to Begin</h2>
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn" >A.I. Options</button>
-    <div class="dropdown-content" >
-      <a id="google" href="#">Google Gemini</a>
-      <a id="groq" href="#">Groq AI</a>
-      <a id="deepseek" href="#">DeepSeek AI</a>
+    <button class="dropbtn">A.I. Options</button>
+    <div class="dropdown-content">
+      <a id="google" href="#" onclick="changeAI('Google Gemini')">Google Gemini</a>
+      <a id="groq" href="#" onclick="changeAI('Groq AI')">Groq AI</a>
+      <a id="deepseek" href="#" onclick="changeAI('DeepSeek AI')">DeepSeek AI</a>
     </div>
   </div>
 </section>
 
-
-<!-- AI Search Bar -->
-<div id="search-container">
-  <input type="text" id="search-input" placeholder="Ask a question..." />
-  <button onclick="searchAI()">Search</button>
-  <div id="search-results"></div>
-</div>
-
-<!-- Middle Section (Below Water) -->
-<div class="sec" id="sec">
-  <!-- Sea Backgrounds -->
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss4.png?v=1738629387386" id="sea1" class="undersea" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630353503" id="sea2" class="undersea" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss2.png?v=1738629375770" id="sea3" class="undersea" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss6.png?v=1738629636824" id="sea4" class="undersea" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss10.png?v=1738630020720" id="sea5" class="undersea" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss5.png?v=1738629381816" id="sea6" class="undersea" style="transform: scale(1.7)" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss11.png?v=1738630442844" id="sea7" class="undersea" />
-
-  <!-- Text Content -->
-  <div class ="webTitle">
-    <h2 id="nextgen">Next Gen AI Study Tool</h2>
-    <h3>By StudyTrack</h3>
-  </div>
-
-
-  <div class="glass">
-    <h3>What is Artificial Intelligence?</h3>
-    <ul>
-      <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines. AI allows computers and software to perform tasks that typically require human intelligence.</p>
-      <li><h4>Narrow AI:</h4><p>This is AI designed to perform a specific task like facial recognition or playing chess.</p></li>
-      <li><h4>General AI:</h4><p>This is an advanced AI that can perform any intellectual task that a human can do.</p></li>
-    </ul>
-  </div>
-
-  <div class="glass">
-    <h3>AI + Academic Success</h3>
-    <ul>
-      <li><h4>Personalized Learning</h4><p>AI can adapt to a student’s learning style and provide personalized resources and feedback.</p></li>
-      <li><h4>Smart Tutoring</h4><p>Our AI-powered tutoring system offers instant help with questions or problems, available 24/7.</p></li>
-      <li><h4>Exam Preparation</h4><p>Generate customized practice exams based on the syllabus for better preparation.</p></li>
-    </ul>
-  </div>
-
-  <div class="glass">
-    <h3>Ethical AI Use</h3>
-    <ul>
-      <p>We ensure that AI is used ethically to create a fair, secure, and responsible environment.</p>
-      <li><h4>Advance, Not Replace</h4><p>The AI should help students learn, not do the work for them.</p></li>
-      <li><h4>Secured Data</h4><p>Personal data is kept secure and used responsibly, following GDPR standards.</p></li>
-      <li><h4>Transparency</h4><p>Students can understand how the AI works and how it makes decisions.</p></li>
-    </ul>
-  </div>
-
-  <!-- Fish and Seabed Images -->
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss12.png?v=1738631864552" id="fish1" class="fishes" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss13.png?v=1738632020949" id="fish2" class="fishes" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632037354" id="fish3" class="fishes" />
-  <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/ss14.png?v=1738632155786" id="fish4" class="fishes" />
-
-  <!-- Bubble Animation -->
-  <div class="bubbles">
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble2.png?v=1738630842217" width="30" height="30" />
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble3.png?v=1738630866087" width="50" height="50" />
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble4.png?v=1738631261894" width="30" height="30" />
-    <img src="https://cdn.glitch.global/378ed1be-8e04-48fe-8003-36c2120f0ee5/bubble1.png?v=1738631167704" width="40" height="40" />
-  </div>
-</div>
-
 <!-- Contact Form -->
 <div class="sec" id="secc">
   <div class="contactForm">
-    <form>
+    <form method="POST" action="submit-form.php">
       <h1 class="title text-center mb-4">Contact Us</h1>
       <div class="form-group position-relative">
         <input type="text" id="formName" class="form-control" placeholder="Name" required />
@@ -150,8 +78,5 @@
 
 <!-- Scroll to Top Button -->
 <a id="top" href="#"> <i class="fas fa-arrow-up"></i> </a>
-
-<!-- JavaScript -->
-<script src="action.js"></script>
 </body>
 </html>

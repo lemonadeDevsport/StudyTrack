@@ -32,6 +32,14 @@
     }
 }
 
+@keyframes fishes {
+
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+
+}
+
 /* Delay for each bubble separately (Desktop View) */
 .bubbles img:nth-child(1) { animation-delay: 2s; }
 .bubbles img:nth-child(2) { animation-delay: 5s; }

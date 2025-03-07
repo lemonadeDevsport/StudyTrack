@@ -73,10 +73,9 @@ window.addEventListener('scroll', function () {
 });
 
 /*changeAI*/
-function changeAI() {
-    const dropdown = document.getElementById("dropdown");
-    const text = document.getElementById("sTitle");
-    text.innerText = dropdown.value;
+function changeAI(aiName) {
+    document.getElementById('sTitle').textContent = aiName;
+
 }
 /*END changeAI*/
 
